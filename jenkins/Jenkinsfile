@@ -1,0 +1,13 @@
+node {
+    stage('Preparation') {
+       bat ''' call simple.bat '''
+    }
+    stage('Build') {
+        bat ''' call simple.bat '''
+    }
+    stage('Post build action') {
+        bat ''' call simple.bat '''
+        
+    }
+    
+}
